@@ -14,5 +14,15 @@ public class Main
         {
             v.drive();
         }
+
+        Dog dog = new Dog("Cooper", 0);
+        Plant plant = new Plant("Rose", "Red");
+        ArrayList<Waterable> waterables = new ArrayList<>();
+        waterables.add(dog);
+        waterables.add(plant);
+        for (Waterable water : waterables)
+        {
+            water.giveWater();
+        }
     }
 }
